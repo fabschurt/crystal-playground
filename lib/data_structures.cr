@@ -47,20 +47,3 @@ struct Book
     io << "#{@title} (#{@authors.join(", ")})"
   end
 end
-
-good_book = Book.new(
-  type: BookType::NOVEL,
-  title: Name.new("Cœur de canard"),
-  authors: [
-    Author.new(
-      Name.new("Lewis"),
-      Name.new("Trondheim"),
-    ),
-    Author.new(
-      Name.new("Joann"),
-      Name.new("Sfar"),
-    ),
-  ],
-)
-
-puts "#{good_book}" # "Cœur de canard (Lewis Trondheim, Joann Sfar)"
