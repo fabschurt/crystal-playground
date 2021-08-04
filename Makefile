@@ -1,5 +1,5 @@
 .PHONY: build
-build_images:
+build:
 	docker-compose build
 
 .PHONY: test
